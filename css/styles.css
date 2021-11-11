@@ -586,7 +586,7 @@ a {
 }
 
 .subscribe-title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -635,6 +635,7 @@ a {
 
 .subscribe-icon {
   fill: currentColor;
+  margin-left: 10px;
 }
 
 /*----------------------------- PORTFOLIO -----------------------------*/
@@ -928,9 +929,19 @@ a {
   cursor: pointer;
 }
 
+.input-checkbox {
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.input-checkbox:hover + .label-checkbox::before,
+.input-checkbox:focus + .label-checkbox::before {
+  border-color: var(--accent-color-blue);
+}
+
 .input-checkbox:checked + .label-checkbox::before {
-  background-image: url(../images/Vector.svg);
   background-color: var(--accent-color-blue);
+  background-image: url(../images/Vector.svg);
   border-color: transparent;
   background-size: contain;
   background-origin: border-box;
