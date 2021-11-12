@@ -838,7 +838,7 @@ a {
 
 .field-form {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 }
@@ -915,6 +915,9 @@ a {
 
   font-size: 14px;
   line-height: 1.71;
+
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .label-checkbox::before {
@@ -929,10 +932,6 @@ a {
   cursor: pointer;
 }
 
-.input-checkbox {
-  transition: border-color var(--transition-duration)
-    var(--transition-timing-function);
-}
 
 .input-checkbox:hover + .label-checkbox::before,
 .input-checkbox:focus + .label-checkbox::before {
